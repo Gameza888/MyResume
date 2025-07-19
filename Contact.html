@@ -8,9 +8,17 @@
 <body>
     <h1>Contect Me</h1>
     <ul>
-        <li>Fakebook : </li>
-        <li></li>
-        <li></li>
+        <li>Fakebook : Gamelnwza</li>
+        <li>Line : @game888</li>
+        <li>Tel : 0-999-9999</li>
     </ul>
+    <div id="footer"></div>
+        <script>
+            fetch('footer.html')
+            .then(res => res.text())
+            .then(data => {
+            document.getElementById('footer').innerHTML = data;
+            });
+        </script>
 </body>
 </html>
