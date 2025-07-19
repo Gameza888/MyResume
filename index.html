@@ -6,6 +6,17 @@
     <title>My Resume</title>
 </head>
 <body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <img src="img/me.jpg" height="200">
+    </div>
     <h1>Summary</h1>
         ผมชื่อเกมส์
     <h1>Education</h1>
@@ -22,9 +33,16 @@
         <li>แชมป์การแข่งควิชดิส</li>
         <li>แชมป์ประลองเวทย์</li>
     </ul>
-    <img src="Img/a.jpg" height="500"><br/>
-    <a href="Contact.html">Contrac Me</a>
     <a href="Hobbie.html">MyHobbie</a>
-    <a href="footer.html">Footer</a>
+    <div id="footer"></div>
+        <script>
+            fetch('footer.html')
+            .then(res => res.text())
+            .then(data => {
+            document.getElementById('footer').innerHTML = data;
+            });
+        </script>
+</body>
+</html>
 </body>
 </html>
