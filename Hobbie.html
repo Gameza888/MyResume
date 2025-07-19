@@ -8,15 +8,22 @@
 <body>
     <h1>เล่นเกมส์</h1>
     <ul>
-        <h3><li>Valorant</li>
+        <h3><li>Valorant</li><br/>
+        <img src="img/valorant logo.png" height="100">
         <li>Rov</li>
+        <img src="img/rov logo.png" height="120">
         <li>Pes</li></h3>
+        <img src="img/pes logo.png" height="100">
+        <br/>
     </ul>
     <h1>ดูหนัง</h1>
     <ul>
         <h3><li>Money Heist</li>
+        <img src="img/moneyheist logo.jpg" height="120">  
         <li>John Wick</li>
+        <img src="img/johnwick logo.png" height="100">  
         <li>Prison Break</li></h3>
+        <img src="img/prisonbreak logo.png" height="130">
     </ul>
     <h1>ฟังเพลง</h1>
     <ul>
@@ -24,5 +31,13 @@
         <li>Ecstasy - Jomo</li>
         <li>Ride - HYBS</li></h3>
     </ul>
+    <div id="footer"></div>
+        <script>
+            fetch('footer.html')
+            .then(res => res.text())
+            .then(data => {
+            document.getElementById('footer').innerHTML = data;
+            });
+        </script>
 </body>
 </html>
